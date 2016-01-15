@@ -90,9 +90,7 @@ public class speedtest extends Activity {
         }
     };
 
-    /**
-     * Our Slave worker that does actually all the work
-     */
+    
     private final Runnable mWorker=new Runnable(){
 
         @Override
@@ -161,10 +159,7 @@ public class speedtest extends Activity {
         }
     };
 
-    /**
-     * Get Network type from download rate
-     * @return 0 for Edge and 1 for 3G
-     */
+
     private int networkType(final double kbps){
         int type=1;//3G
         //Check if its EDGE
@@ -196,11 +191,7 @@ public class speedtest extends Activity {
         return info;
     }
 
-    /**
-     * Transfer Object
-     * @author devil
-     *
-     */
+    
     private static class SpeedInfo{
         public double kilobits=0;
         public double megabits=0;
